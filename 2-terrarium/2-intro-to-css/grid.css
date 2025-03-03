@@ -1,0 +1,140 @@
+h1 {
+	color: #3a241d;
+	text-align: center;
+	padding: 0%;
+	margin: 0%;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	padding: 0%;
+	margin: 0%;
+	/* overflow: hidden; */
+}
+
+#page {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	text-align: center;
+	padding: 0%;
+	height: 100vh;
+}
+
+#terrarium {
+	text-align: center;
+	display: grid;
+	grid-template-rows: 60px 5% 84.5% 1.5%;
+	aspect-ratio: 0.6 ;
+	margin: 15px;
+	/* align-items: center; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list {
+	display: grid;
+	grid-template-rows: repeat(7, 1fr);
+	overflow: hidden;
+	overflow-y: visible;
+}
+
+#left-container {
+	background-color: #eee;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+#right-container {
+	background-color: #eee;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.plant {
+	z-index: 2;
+}
+
+.jar-walls {
+	background: #d1e1df;
+	border-radius: 7% 7% 6% 6%;
+	opacity: 0.5;
+	z-index: 1;
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr;
+}
+
+.jar-bottom {
+	background: #d1e1df;
+	opacity: 0.7;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.jar-top {
+	background: #d1e1df;
+	opacity: 0.7;
+	z-index: 1;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+
+.dirt {
+	background: #3a241d;
+	border-radius: 0 0 3% 3%;
+	opacity: 0.7;
+	bottom: 0;
+	z-index: 11;
+	/* display: flex; */
+}
+
+.jar-glossy-long {
+	width: 3%;
+	margin: 3%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.jar-glossy-short {
+	width: 3%;
+	margin: 3%;
+	margin-top: 25%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+@media (max-width: 575px) {
+	#page {
+		grid-template-columns: none;
+		grid-template-rows: 10% 80% 10%;
+	}
+
+	img {
+		width: auto;
+		height: 60px;
+	}
+
+	#terrarium {
+		padding-bottom: 10px;
+		
+	}
+
+	.list {
+		grid-template-rows: none;
+		grid-template-columns: repeat(7, 1fr);
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+
+	#plant-holder {
+		height: 100%;
+	}
+}
