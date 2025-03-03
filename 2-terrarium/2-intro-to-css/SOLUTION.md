@@ -26,6 +26,6 @@
 
 Implemented in css-grid-index.html file. To do this I used grid-template and some media queries to make it dynamic and responsive.
 
-![window 1](window 1.png)
-![window 2](window 2.png)
-![window 3](window 3.png)
+![window 1](window1.png)
+![window 2](window2.png)
+![window 3](window3.png)
