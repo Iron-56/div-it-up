@@ -11,7 +11,7 @@
 	</body>
 </html>
 ```
-(deprecated.png)
+[](deprecated.png)
 
 ## Assignment
 
