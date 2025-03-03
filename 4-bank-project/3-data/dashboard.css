@@ -1,0 +1,150 @@
+header {
+	background-color: #434454;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+
+#description {
+	color: #59727e;
+}
+
+#transaction-header {
+	background-color: azure;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#transactions-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #effefe;
+	padding: 15px 0 25px 0;
+	width: 100%;
+}
+
+#dashboard-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	background-color: #effefe;
+	padding: 0px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	margin: 0%;
+	color: white;
+}
+
+td, th {
+	padding: 10px;
+}
+
+h2 {
+	padding: 0%;
+	margin: 0%;
+	color: #3584c9;
+	font-weight: bold;
+}
+
+a {
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+#add-transaction {
+	background-color: #258ad9;
+	color: white;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+table {
+	background-color: #f5f5f5;
+	border-collapse: collapse;
+	border-radius: 10px;
+	width: 80%;
+	padding: 10px;
+}
+
+
+
+tr:nth-child(even):not(:has(hr)) {
+	background-color: #cfe5f2;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: #38a3e7;
+	overflow: hidden;
+}
+
+section {
+	text-align: center;
+}
+
+#account {
+	background-image: linear-gradient(to right, #79bce7, #2193eb, #79bce7);
+	padding: 10px;
+	width: 100%;
+	color: white;
+	box-sizing: border-box;
+}
+
+#currency {
+	font-size: xx-large;
+}
+
+#balance {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+footer {
+	position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+footer>a {
+	color: white;
+	text-decoration: none;
+	border: none;
+	padding: 0%;
+}
+
+* {
+	font-family: 'Arial', sans-serif;
+}

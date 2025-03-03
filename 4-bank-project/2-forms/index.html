@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bank App</title>
+		<script src="app.js" defer></script>
+		<link rel="stylesheet" id="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="app" class="full">Loading...</div>
+		<template id="login">
+			<div class="full">
+				<h1>Bank App</h1>
+				<section class="full">
+					<div id="container">
+						<h2>LOGIN</h2>
+						<form id="loginForm" class="full">
+							<label for="username">Username</label>
+							<input id="username" name="user" type="text"> <br>
+							<button>LOGIN</button>
+						</form>
+						<div class="or full">OR</div>
+						<h2>REGISTER</h2>
+						<form id="registerForm" action="javascript:register()" method="POST" class="full">
+							<label for="user">Username</label>
+							<input id="user" name="user" type="text" maxlength="20" required> <br>
+							<div id="userError" hidden="true">User already exists</div>
+							<label for="currency">Currency</label>
+							<input id="currency" name="currency" type="text" value="$" maxlength="5" required> <br>
+							<label for="description">Description</label>
+							<input id="description" name="description" type="text" maxlength="100"> <br>
+							<label for="balance">Current balance</label>
+							<input id="balance" name="balance" type="number" value="0"><br>
+							<button>REGISTER</button>
+						</form>
+					</div>
+				</section>
+			</div>
+			<footer>
+				<a href="/credits" onclick="onLinkClick(event)">CREDITS</a>
+			</footer>
+		</template>
+		<template id="dashboard">
+			<header>
+				<h1>Bank App</h1>
+				<a href="/login" onclick="onLinkClick(event)">Logout</a>
+			</header>
+		<section>
+			Balance: 100$
+		</section>
+		<section>
+			<h2>Transactions</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Object</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</section>
+		</template>
+
+		<template id="credits">
+			<h1>Credits</h1>
+			<div class='wrapper'>
+				<div class='movie'>
+				Welcome</div>
+				<div class='job'>
+				My script</div>
+				<div class='name'>
+				LEARN EDITING SCRIPT</div>
+				<div class='job'>
+				WITH CODE</div>
+				<div class='name'>
+				CSS HTML EFFECT</div>
+				<div class='job'>
+				SOURCES CODE</div>
+				<div class='name'>
+				CODEPEN GITHUB</div>
+				<div class='job'>
+				SOURCE NEXT</div>
+				<div class='name'>
+				ALL SOURCES CODE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT SHINE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT ROTATE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT SLIDE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT HOVER</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT TRANSISI</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT FLIP</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT TOOLTIP</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT RADIAL</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT MULTIPLE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT ANIMATED</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT EXPANDING</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT TRANSFORMS</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT OVERLAY</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT LOADING</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT CIRCLE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT NAPIGATION</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT DROPDOWN</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT LIGHTING</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT ZOOM</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT SCALE</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT OPACITY</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFECT FLASHING</div>
+				<div class='job'>
+				CODE EFFECT</div>
+				<div class='name'>
+				EFFCET SMOKE</div>
+				<div class='job'>
+				CODE EDITED BY.</div>
+				<div class='name'>
+				MYSCRIPT2010</div>
+				<div class='job'>
+				</div>
+			</div>
+		</template>
+	</body>
+</html>
